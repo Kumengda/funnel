@@ -24,3 +24,11 @@ func checkDeviceName(des []HandleDes) error {
 	}
 	return nil
 }
+func stringInSlice(target string, slice []string) bool {
+	for _, item := range slice {
+		if item == target {
+			return true
+		}
+	}
+	return false
+}
